@@ -12,12 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * A configuration source for {@code application.properties}.
- */
 public abstract class EnvCongigSource implements ConfigSource {
 
-  static final String APPLICATION_PROPERTIES = System.getenv( "HL.config.file" );
+  static final String APPLICATION_PROPERTIES = System.getenv( "QUARKUS_CONF_FILE" );
 
   private Map<String, String> properties = new HashMap<>( );
 
