@@ -1,6 +1,6 @@
 # Quarkus_env_conf_issue
 
-Objective is to load the configuration from an external file.
+Trying to load a configuration from an external file.
 Path of the file is given via an environment variable :
 QUARKUS_CONF_FILE="application.properties"
 
