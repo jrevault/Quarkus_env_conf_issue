@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/issue")
-public class TestsController {
+public class IssueEndpoint {
 
   @ConfigProperty(name = "from.env")
   boolean from_env;
