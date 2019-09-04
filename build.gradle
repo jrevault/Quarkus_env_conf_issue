@@ -1,0 +1,24 @@
+plugins {
+  id 'java'
+  id 'io.quarkus' version '0.21.1'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+
+  implementation enforcedPlatform('io.quarkus:quarkus-bom:0.21.1')
+  implementation 'io.quarkus:quarkus-resteasy:0.21.1'
+  implementation 'io.quarkus:quarkus-resteasy-deployment:0.21.1'
+  implementation 'io.quarkus:quarkus-resteasy-jackson:0.21.1'
+
+  testCompile 'io.quarkus:quarkus-junit5:0.21.1'
+  testCompile 'io.rest-assured:rest-assured:3.3.0'
+}
+
+test {
+  useJUnitPlatform()
+}
+
